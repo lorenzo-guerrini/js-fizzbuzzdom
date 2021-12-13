@@ -2,6 +2,7 @@ for (let i = 1; i <= 100; i++) {
     let number;
     const container = document.querySelector(".container");
     const element = document.createElement("div");
+    element.classList.add("element");
 
     if ((i % 3 == 0) && (i % 5 == 0)) {
         number = "FizzBuzz";
