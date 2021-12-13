@@ -1,11 +1,21 @@
 for (let i = 1; i <= 100; i++) {
+    let number;
+
     if ((i % 3 == 0) && (i % 5 == 0)) {
-        console.log("FizzBuzz")
+        number = "FizzBuzz";
     } else if (i % 3 == 0) {
-        console.log("Fizz");
+        number = "Fizz";
     } else if (i % 5 == 0) {
-        console.log("Buzz");
+        number = "Buzz";
     } else {
-        console.log(i);
+        number = i;
     }
+
+    console.log(number);
+
+    const container = document.querySelector(".container");
+    const element = document.createElement("div");
+
+    element.append(i);
+    container.append(element);
 }
